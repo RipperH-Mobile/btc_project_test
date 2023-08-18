@@ -52,6 +52,7 @@ dependencies:
   pin_code_fields: ^7.4.0
   #Toast
   fluttertoast: ^8.0.9
+  prime_numbers: ^0.0.4
 
   shared_preferences: ^2.2.0
   dio: ^5.3.2

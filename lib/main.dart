@@ -1,5 +1,7 @@
 import 'package:btc_project/ui/btc_funtion/btc_main.dart';
 import 'package:btc_project/ui/pincode/pin_main.dart';
+import 'package:btc_project/ui/reuse_file/generate_Pn.dart';
+import 'package:btc_project/ui/reuse_file/generate_fibonacci.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:page_transition/page_transition.dart';
@@ -82,6 +84,18 @@ class _MyHomePageState extends State<MyHomePage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => BtcMain()),
+              );
+            }),
+            buildGestureDetector(title: "จำนวนเฉพาะ" , callback: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => GeneratePn()),
+              );
+            }),
+            buildGestureDetector(title: "Fibonacci" , callback: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => GenerateFibonacci()),
               );
             }),
           ],
